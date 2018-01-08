@@ -1,9 +1,13 @@
 # put your code here.
 # read and load file
+from sys import argv
+# print(sys.argv, len(sys.argv))
+# "wordcount.py" = sys.argv[0]
+# "test.txt" = sys.argv[1:]
 
 
 def word_counter(filename):
-    """"""
+    """Takes a text file and returns how many times a word shows up!"""
 
     text_file = open(filename)
     # text_file = open("twain.txt")
@@ -38,4 +42,4 @@ def word_counter(filename):
     # if word is already added to dict, increment by 1
 # return key (word) and value (how many times word shows up)
 
-word_counter("test.txt")
+word_counter(argv[1])
