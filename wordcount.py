@@ -26,6 +26,14 @@ def word_counter(filename):
             word = word.lower()
             my_dict[word] = my_dict.get(word, 0) + 1
 
+    #if dictionary[word] > different dictionary[word]:
+        #?????
+    #elif dictionary[word] = different dictionary[word]:
+        # group together to alphabetize
+
+    #else ^ < ^:
+        #?????
+
     # print list_of_word
     # print my_dict.items()
 
