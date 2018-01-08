@@ -13,10 +13,13 @@ def word_counter(filename):
     my_dict = {}
 
     for line in text_file:
+        line = line.replace(",", "").replace("!", "").replace("?", "").replace(".", "")
+        # the above works but is so ugly
         line = line.rstrip()
         words = line.split(" ")
         # list_of_words.extend(words)
         for word in words:
+            word = word.lower()
             my_dict[word] = my_dict.get(word, 0) + 1
 
     # print list_of_word
