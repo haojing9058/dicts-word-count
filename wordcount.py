@@ -29,7 +29,9 @@ def word_counter(filename):
     # print list_of_word
     # print my_dict.items()
 
-    for word, count in my_dict.items():
+    sorted_pairs = sorted(my_dict.items())
+
+    for word, count in sorted_pairs:
         print "{} {}".format(word, count)
 
 # for word in words:
